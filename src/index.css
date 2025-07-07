@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@layer components {
+  .btn-product {
+    @apply px-8 py-4 text-center font-medium text-white bg-pink-700 w-full rounded-full hover:bg-pink-800 transition-colors duration-200;
+  }
+  .btn-nav {
+    @apply bg-transparent px-4 py-2 font-medium text-white ml-4 lg:px-4;
+  }
+}
