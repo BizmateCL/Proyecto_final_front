@@ -8,6 +8,8 @@ const LegginList = () => {
 
   useEffect(() => {
     getLeggins();
+    //codigo modificado
+
   }, []);
 
   return (
@@ -30,12 +32,9 @@ const LegginList = () => {
                 </div>
 
                 <div className="flex-1 p4 space-y-2 flex flex-col">
-                  <h3 className="text-xl font-bold text-gray-900 ">
-                    {leggin.name}
-                  </h3>
-                  <p className="text-gray-500 pb-8">{leggin.description}</p>
-                  <Link
-                    to={`/leggins/${leggin._id}`}
+                  <h3 className="text-xl font-bold text-gray-900 ">{leggin.name}
+                  </h3><p className="text-gray-500 pb-8">{leggin.description}</p>
+                  <Link to={`/leggins/${leggin._id}`}
                     state={{ leggin }}
                     className="btn-product"
                   >
@@ -45,12 +44,12 @@ const LegginList = () => {
                   </Link>
                 </div>
               </div>
-            );
+            )
           })
         )}
       </section>
     </>
-  );
-};
+  )
+}
 
-export default LegginList;
+export default LegginList

@@ -5,7 +5,11 @@ const LegginReducer=(globalState,action)=>{
             ...globalState,
             leggins: action.payload //action.payload es el arreglo de leggins que viene del backend
         }
-
+        case "OBTENER_LEGGIN":
+            return {
+                ...globalState,
+                currentLeggin: action.payload //action.payload es el leggin que viene del backend
+            }
 
         default:
             return globalState;

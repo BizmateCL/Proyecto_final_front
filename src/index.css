@@ -7,4 +7,27 @@
   .btn-nav {
     @apply bg-transparent px-4 py-2 font-medium text-white ml-4 lg:px-4;
   }
+  .form-label {
+        @apply block text-sm;
+    }
+
+    .form-input {
+        @apply block w-full mt-1 px-4 py-2 border font-light focus:outline-none focus:border-gray-500 sm:text-sm;
+    }
+
+    .form-button {
+        @apply px-8 py-4 text-center font-medium text-white bg-pink-700 w-full rounded-full hover:bg-pink-800 transition-colors duration-200;
+    }
+
+    .btn-cart {
+         @apply ml-4 flex items-center text-white;
+    }
+
+    .btn-cart-quantity {
+        @apply ml-2 text-sm font-medium;
+    }
+
+    .checkout-figure-img {
+        @apply w-24 h-24 rounded-lg object-center object-cover sm:w-32 sm:h-32;
+    }
 }
