@@ -22,7 +22,7 @@ const LegginList = () => {
             return (
               <div key={leggin._id} className="border flex flex-col">
                 <div className="bg-gray-200">
-                  <Link to={`/leggins/${leggin._id}`} state={{leggin}}>
+                  <Link to={`/leggins/${leggin.slug}`} state={{leggin}}>
                     <img
                       src={leggin.img}
                       alt={leggin.description}
@@ -34,7 +34,7 @@ const LegginList = () => {
                 <div className="flex-1 p4 space-y-2 flex flex-col">
                   <h3 className="text-xl font-bold text-gray-900 ">{leggin.name}
                   </h3><p className="text-gray-500 pb-8">{leggin.description}</p>
-                  <Link to={`/leggins/${leggin._id}`}
+                  <Link to={`/leggins/${leggin.slug}`}
                     state={{ leggin }}
                     className="btn-product"
                   >

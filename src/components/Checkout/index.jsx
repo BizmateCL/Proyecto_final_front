@@ -39,7 +39,11 @@ export default function Checkout() {
   }, [cart]);
 
   const handleChange = (e) => {
+    console.log(e.target.value);
+    console.log(e.target.name);
     const updatedCart = cart.map((elt) => {
+      console.log("Updating cart item:", elt);
+      console.log(elt.priceID, e.target.name);
       return elt.priceID === e.target.name
         ? {
             ...elt,

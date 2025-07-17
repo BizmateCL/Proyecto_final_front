@@ -8,7 +8,10 @@ const SingleLeggin = () => {
   const [quantity, setQuantity] = useState(1);
   const location = useLocation();
   const { leggin } = location?.state;
-const navigate = useNavigate();
+
+  
+  const navigate = useNavigate();
+  
   const userCtx = useContext(UserContext);
   const { authStatus, cart, editCart, getCart } = userCtx;
 
