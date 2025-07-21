@@ -1,6 +1,11 @@
-# Proyecto API backend - Backend de Autenticación y Productos (Leggins)
+# Proyecto API frontend de ecommerce de venta de productos Leggins femeninos
 
-Este proyecto es una aplicación backend que administra la autenticación y autorización de usuarios, así como la gestión de productos "Leggins" basado en los productos desarrollados en clases (Guitarras). Se desarrolló utilizando Node.js, Express, MongoDB (con Mongoose) y JWT para la seguridad. El despliegue se realizó en Railway y la base de datos se aloja en MongoDB Atlas Cloud.
+Este proyecto es una aplicación  de ecommerce en que se realiza la venta ( sin llegar a pagar los productos), en que se abordan los siguientes procesos:
+-Iniciar sesión
+-Ver y modificar perfil(excepto email)
+-Ver carro de compras ( con los productos escogidos), exclusivamente del usuario logueado
+-Acceder al menu de productos ( leggins). A este menu se puede acceder ya sea estando logueado o no
+-Cerrar sesión
 
 ## Tecnologías utilizadas
 
@@ -13,12 +18,12 @@ Este proyecto es una aplicación backend que administra la autenticación y auto
 
 ## Estructura
 
-El proyecto está organizado en carpetas para controladores, modelos y rutas.
+El proyecto está organizado en carpetas para componentes, configuración ( axios), contextos, rutas, entre otros).
 
 ## Funcionalidades principales
 
 - Registro e inicio de sesión de usuarios con autenticación JWT.
-- CRUD de productos tipo Leggins y  Usuarios
+- CRUD de productos tipo Leggins y Usuarios
 - Seguridad y autorización en endpoints protegidos en usuarios (login, verificacion y actualizacion de usuario en el cual se requiere token y id de usuario ).
 
 ## Endpoints principales
@@ -44,15 +49,12 @@ Nota: ID de ejemplo 68461bb39e8b6b5c2ed08cd1
 | Actualizar usuario         | PUT    | `https://proyecto6-production.up.railway.app/api/users/update-user/id`                                             | Actualizar información de perfil.                                                            |
 
 
-Nota ejemplo de id de usuario :  684630ca46e88efb1fa37978
+Nota ejemplo de id de usuario : xxxxxxxxxxxxx
 ## Despliegue
 
 El proyecto está desplegado en Railway:  
 [https://proyecto6-production.up.railway.app/](https://proyecto6-production.up.railway.app/)
 
----
 
-**Nota:**  
-Reemplaza `:id` en los endpoints por el ID real del producto o usuario. Al final de cada tabla hay un id de ejemplo.
 
 ---
